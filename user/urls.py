@@ -13,6 +13,6 @@ urlpatterns = [
     path(route='signup/',view=views.SignupView.as_view(),name='signup'),
     path(route='me/profile/',view=views.UpdateProfileView.as_view(),name='update'),
 
-    # Posts
+    # Posts -> hay que ponerlo abajo ya que Django lo reconoce por orden
     path( route='<str:username>/',view=views.UserDetailView.as_view(),name='detail')
 ]

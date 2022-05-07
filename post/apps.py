@@ -1,6 +1,10 @@
+# importaciones --------------------------------------------
 from django.apps import AppConfig
 
+# Codigo ---------------------------------------------------
 
-class PostConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
+class PostsConfig(AppConfig):
+    #default_auto_field = 'django.db.models.BigAutoField'
+    """ Post aplication settings """
     name = 'post'
+    varbose_name = 'Post'
