@@ -12,4 +12,5 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = (
             'user', 
-        'profile', 'title', 'photo')
+        #'profile',
+        'title', 'photo')

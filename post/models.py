@@ -17,7 +17,7 @@ class User(models.Model):
 class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)#on_delete, cuando se borre el usuario se borren los post
     #? unique: para que no se repita el mail en la base de datos
-    profile = models.ForeignKey('users.Profile', on_delete=models.CASCADE)
+    #profile = models.ForeignKey('users.Profile', on_delete=models.CASCADE)
     #? unique: para que no se repita el mail en la base de datos
     title = models.CharField(max_length=255)
     photo = models.ImageField(upload_to='posts/photos')
